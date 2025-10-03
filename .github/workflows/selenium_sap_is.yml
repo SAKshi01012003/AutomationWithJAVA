@@ -1,14 +1,20 @@
 
-name: Fetch SAP Integration Suite Cookies
+name: Fetch SAP Integration Suite Cookies for sharepoint test
 
 on:
-  # schedule:
-  #   - cron: '30 2 * * *'  # 8:00 AM IST = 2:30 AM UTC
+  schedule:
+    # - cron: '30 2 * * *'  # 8:00 AM IST = 2:30 AM UTC
+    - cron: '0 4 * * *'  # 9:30 AM IST = 4:0 AM UTC
+    # - cron: '45 6 * * *'  # ⏰ Dispatch Time: 11:50 AM IST (UTC+5:30)
+    #Dummy Commit
+    #Dummy Commit 
   workflow_dispatch:       # Manual trigger
 
 jobs:
   fetch-and-send-cookies:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+
 
     steps:
       - name: Checkout Repository
