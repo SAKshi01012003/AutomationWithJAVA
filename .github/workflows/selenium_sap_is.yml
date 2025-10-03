@@ -1,5 +1,5 @@
 
-name: Fetch SAP Integration Suite Cookies for sharepoint test
+name: Fetch SAP Integration Suite Cookies
 
 on:
   schedule:
